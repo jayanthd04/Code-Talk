@@ -15,7 +15,7 @@ pip install faiss-cpu
 
 Install llama-cpp-python:
 
- '\t'llama-cpp-python can be installed to either run on CPU or GPU 
+llama-cpp-python can be installed to either run on CPU or GPU 
     
  To install llama-cpp-python to run on CPU:
  ```
@@ -23,26 +23,26 @@ Install llama-cpp-python:
  ``` 
     
  To install llama-cpp-python to run on GPU:
-    Set the CMAKE_ARGS and FORCE_CMAKE environment variables
-    To install llama-cpp-python with cuBLAS:
-        ```
-        CMAKE_ARGS = "-DLLAMA_CUBLAS=on"
-        FORCE_CMAKE = 1
-        ```
-    To install llama-cpp-python with OpenBLAS: 
-        ```
-        CMAKE_ARGS="-DLLAMA_BLAS=ON -DLLAMA_BLAS_VENDOR=OpenBLAS"
-        FORCE_CMAKE=1
-        ```
-    To install llama-cpp-python CLBlast:
-        ```
-        CMAKE_ARGS="-DLLAMA_CLBLAST=on"
-        FORCE_CMAKE=1
-        ```
-    Finally, install llama-cpp-python
-    ```
-     pip install llama-cpp-python
-    ```
+ Set the CMAKE_ARGS and FORCE_CMAKE environment variables
+ To install llama-cpp-python with cuBLAS:
+ ```
+ CMAKE_ARGS = "-DLLAMA_CUBLAS=on"
+ FORCE_CMAKE = 1
+ ```
+ To install llama-cpp-python with OpenBLAS: 
+ ```
+ CMAKE_ARGS="-DLLAMA_BLAS=ON -DLLAMA_BLAS_VENDOR=OpenBLAS"
+ FORCE_CMAKE=1
+ ```
+ To install llama-cpp-python CLBlast:
+ ```
+ CMAKE_ARGS="-DLLAMA_CLBLAST=on"
+ FORCE_CMAKE=1
+ ```
+ Finally, install llama-cpp-python
+ ```
+ pip install llama-cpp-python
+ ```
 Install hugging-faces 
 ```
 pip install huggingface-hub
