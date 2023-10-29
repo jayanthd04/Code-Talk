@@ -15,12 +15,12 @@ pip install faiss-cpu
 
 Install llama-cpp-python:
 
- llama-cpp-python can be installed to either run on CPU or GPU 
+ '\t'llama-cpp-python can be installed to either run on CPU or GPU 
     
  To install llama-cpp-python to run on CPU:
-```
-pip install llama-cpp-python
-``` 
+ ```
+ pip install llama-cpp-python
+ ``` 
     
  To install llama-cpp-python to run on GPU:
     Set the CMAKE_ARGS and FORCE_CMAKE environment variables
