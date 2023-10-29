@@ -3,9 +3,8 @@ Code Talk is a library that leverages the Python binding of Meta's Llama model t
 
 ## Installing required packages 
 Install langchain 
-'''
-pip install langchain
-'''  
+
+'''pip install langchain'''  
 
 Install FAISS vector-store
 '''
