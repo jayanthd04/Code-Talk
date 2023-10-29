@@ -8,7 +8,7 @@ from langchain.vectorstores.faiss import FAISS
 from langchain.callbacks.base import BaseCallbackManager
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 
-"""root_dir = './documents/llama-cpp-python'
+root_dir = './documents/llama-cpp-python'
 docs= []
 for dirpath,dirnames, filenames in os.walk(root_dir):
     for file in filenames:
@@ -19,10 +19,10 @@ for dirpath,dirnames, filenames in os.walk(root_dir):
             pass
 
 text_splitter = CharacterTextSplitter(chunk_size=1000,chunk_overlap=0)
-texts=text_splitter.split_documents(docs)"""
+texts=text_splitter.split_documents(docs)
 embeddings= HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2')
-"""faiss_index = FAISS.from_documents(texts,embeddings)
-faiss_index.save_local("./embeddings/codetalk")"""
+faiss_index = FAISS.from_documents(texts,embeddings)
+faiss_index.save_local("./embeddings/codetalk")
 print("loading indexes")
 faiss_index=FAISS.load_local("./embeddings/codetalk",embeddings)
 retriever = faiss_index.as_retriever()
